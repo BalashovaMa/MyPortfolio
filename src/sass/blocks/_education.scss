@@ -1,0 +1,71 @@
+.education {
+    padding-top: 120px;
+
+    &__title {
+        color: black;
+        text-align: center;
+        position: relative;
+        @include before_circle;
+
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+        
+    }
+    &__column {
+        position: relative;
+        .empty {
+            height: 30px;
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    top: 14px;
+                    left: 0;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &-body {
+            padding: 0 0 0 100px;
+        }
+        &-icon {
+            position: absolute;
+            top: 35px;
+            left: 45px;
+            @include before_circle;
+        }
+    }
+}
