@@ -51,9 +51,12 @@ Here you can see my work and learn more about me">
 
 <body>
     <aside class="sidepanel">
-        <a href="#" class="sidepanel__link"><img src="icons/social/facebook.svg" alt="facebook"></a>
-        <a href="#" class="sidepanel__link"><img src="icons/social/github.svg" alt="github"></a>
-        <a href="#" class="sidepanel__link"><img src="icons/social/linkedin.svg" alt="linkedin"></a>
+        <a href="https://www.facebook.com/marina.balashova.902/" class="sidepanel__link"><img
+                src="icons/social/facebook.svg" alt="facebook"></a>
+        <a href="https://github.com/BalashovaMa/BalashovaMa" class="sidepanel__link"><img src="icons/social/github.svg"
+                alt="github"></a>
+        <a href="https://www.linkedin.com/in/maryna-balashova-b16184239/" class="sidepanel__link"><img
+                src="icons/social/linkedin.svg" alt="linkedin"></a>
         <div class="sidepanel__divider"></div>
         <div class="sidepanel__text"><span>Social Media</span></div>
     </aside>
@@ -71,15 +74,17 @@ Here you can see my work and learn more about me">
                     <li class="menu__link"><a href="#about">About me</a></li>
                     <li class="menu__link"><a href="#expirience">My experience</a></li>
                     <li class="menu__link"><a href="#skills">My skills</a></li>
-                    <li class="menu__link"><a href="#">My works</a></li>
-                    <li class="menu__link"><a href="#">Price list</a></li>
+                    <li class="menu__link"><a href="#works">My works</a></li>
                     <li class="menu__link"><a href="#">Contacts</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
-                <a href="#"><img src="icons/social/facebook.svg" alt="facebook"></a>
-                <a href="#"><img src="icons/social/github.svg" alt="github"></a>
-                <a href="#"><img src="icons/social/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.facebook.com/marina.balashova.902/"><img src="icons/social/facebook.svg"
+                        alt="facebook"></a>
+                <a href="https://github.com/BalashovaMa/BalashovaMa"><img src="icons/social/github.svg"
+                        alt="github"></a>
+                <a href="https://www.linkedin.com/in/maryna-balashova-b16184239/"><img src="icons/social/linkedin.svg"
+                        alt="linkedin"></a>
             </div>
         </div>
         <div class="menu__overlay"></div>
@@ -319,7 +324,7 @@ Here you can see my work and learn more about me">
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="works">
         <div class="container">
             <h2 class="title title_fz16 education__title">Portfolio</h2>
             <div class="title title_fz36 education__subtitle">My works</div>
@@ -337,11 +342,13 @@ Here you can see my work and learn more about me">
                     <img src="img/works/food.jpg" alt="Food">
                     <div class="text-overlay">Food delivery</div>
                 </a>
-                <a href="https://rolling-scopes-school.github.io/balashovama-JSFE2022Q1/pages/main/" class="portfolio__item vertical">
+                <a href="https://rolling-scopes-school.github.io/balashovama-JSFE2022Q1/pages/main/"
+                    class="portfolio__item vertical">
                     <img src="img/works/shelter.jpg" alt="Shelter">
                     <div class="text-overlay">Shelter</div>
                 </a>
-                <a href="https://rolling-scopes-school.github.io/balashovama-JSFEPRESCHOOL/random-jokes/" class="portfolio__item">
+                <a href="https://rolling-scopes-school.github.io/balashovama-JSFEPRESCHOOL/random-jokes/"
+                    class="portfolio__item">
                     <img src="img/works/random_jokes.jpg" alt="Random jokes">
                     <div class="text-overlay">Random quote generator</div>
                 </a>
@@ -350,6 +357,54 @@ Here you can see my work and learn more about me">
                     <div class="text-overlay">Marvel information portal</div>
                 </a>
             </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/contacts.jpg" alt="contacts">
+                </div>
+                <div class="contacts__description">
+                    <h2 class="title title_fz16 title_fz16-black about__title">Contacts</h2>
+                    <div class="about__subtitle title title_fz36">Contact me</div>
+                    <div class="divider"></div>
+                    <div class="title title_fz14 contacts__text">
+                        in any way convenient for You:
+                    </div>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="mailto:balashova.m.nd@gmail.com" class="contacts__link">
+                            <img src="icons/social/mail.svg" alt="mail">
+                        </a>
+                        <a href="https://web.telegram.org/z/#185445472" class="contacts__link">
+                            <img src="icons/social/telegram.svg" alt="telegram">
+                        </a>
+                    </div>
+                    <div class="title title_fz14 contacts__text">
+                        Or leave your contacts and I will write to you myself:
+                    </div>
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input type="text" id="name" name="name">
+                            <label for="name">Your name</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input type="email" id="email" name="email">
+                            <label for="email">Your mail</label>
+                        </div>
+                        <div class="contacts__text">
+                            <textarea name="tetxt" id="tetx"></textarea>
+                            <label for="tetx">Your message</label>
+                        </div>
+                        <button class="btn">Send a message</button>
+                    </form>
+                </div>
+            </div>
+            
+
         </div>
     </section>
     <script src="js/script.js"></script>
