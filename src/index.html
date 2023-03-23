@@ -46,7 +46,7 @@ Here you can see my work and learn more about me">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Portfolio</title>
+    
 </head>
 
 <body>
@@ -75,7 +75,7 @@ Here you can see my work and learn more about me">
                     <li class="menu__link"><a href="#expirience">My experience</a></li>
                     <li class="menu__link"><a href="#skills">My skills</a></li>
                     <li class="menu__link"><a href="#works">My works</a></li>
-                    <li class="menu__link"><a href="#">Contacts</a></li>
+                    <li class="menu__link"><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -232,6 +232,7 @@ Here you can see my work and learn more about me">
                                     </div>
 
                                 </div>
+                            </div>
                         </li>
                         <li>
                             <div class="education__item">
@@ -359,7 +360,7 @@ Here you can see my work and learn more about me">
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -373,7 +374,7 @@ Here you can see my work and learn more about me">
                         in any way convenient for You:
                     </div>
                     <div class="contacts__social">
-                        <a href="#" class="contacts__link">
+                        <a href="https://www.facebook.com/marina.balashova.902/" class="contacts__link">
                             <img src="icons/social/facebook.svg" alt="facebook">
                         </a>
                         <a href="mailto:balashova.m.nd@gmail.com" class="contacts__link">
@@ -388,19 +389,23 @@ Here you can see my work and learn more about me">
                     </div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input type="text" id="name" name="name">
+                            <input required type="text" id="name" name="name">
                             <label for="name">Your name</label>
                         </div>
                         <div class="contacts__input">
-                            <input type="email" id="email" name="email">
+                            <input required type="email" id="email" name="email">
                             <label for="email">Your mail</label>
                         </div>
                         <div class="contacts__text">
-                            <textarea name="text" id="tex"></textarea>
+                            <textarea name="text" id="text"></textarea>
                             <label for="text">Your message</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Send a message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>I agree with <a href="/policy.html">the privacy policy</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
