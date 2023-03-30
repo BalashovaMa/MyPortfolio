@@ -1,7 +1,9 @@
 .skills {
     padding-top: 120px;
+    
 
     &__items {
+       
         margin-top: 60px;
         padding: 0 10px;
         display: grid;
@@ -12,8 +14,13 @@
     }
 
     &__item {
+        color: black;
         padding: 30px 30px 25px 30px;
         border: 1px solid black;
+        &:hover {
+            text-decoration: none;
+            color: black;
+        }
 
         &-img {
             height: 65px;
